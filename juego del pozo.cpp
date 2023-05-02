@@ -56,7 +56,7 @@ else if(direccion==pos2 && j!=0)
 while (direccion==pos2 && j==0)
 {
 printf ("no se puede ir mas para abajo, porfavor ingrese otro direccion");
-scanf ("%d", &direccion);
+scanf ("%c", &direccion);
 }
 //pos3 a (izquierda)
 else if(direccion==pos3 && i!=0)
@@ -65,7 +65,7 @@ else if(direccion==pos3 && i!=0)
 while (direccion==pos3 && i==0)
 {
 printf ("no se puede ir mas para abajo, porfavor ingrese otro direccion");
-scanf ("%d", &direccion);
+scanf ("%c", &direccion);
 }
 //pos4 d (derecha)
 else if(direccion==pos4)
