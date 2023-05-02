@@ -50,11 +50,23 @@ scanf ("%c", &direccion);
 if (direccion==pos1)
 {j=j+1;}
 //pos2 S (abajo)
-else if(direccion==pos2)
+else if(direccion==pos2 && j!=0)
 {j=j-1;}
+//si ya esta abajo del todo, le pide otra direccion asi no se sale del mapa
+while (direccion==pos2 && j==0)
+{
+printf ("no se puede ir mas para abajo, porfavor ingrese otro direccion");
+scanf ("%d", &direccion);
+}
 //pos3 a (izquierda)
-else if(direccion==pos3)
+else if(direccion==pos3 && i!=0)
 {i=i-1;}
+//si ya esta a la izquierda del todo, le pide otra direccion asi no se sale del mapa
+while (direccion==pos3 && i==0)
+{
+printf ("no se puede ir mas para abajo, porfavor ingrese otro direccion");
+scanf ("%d", &direccion);
+}
 //pos4 d (derecha)
 else if(direccion==pos4)
 {i=i+1;}
