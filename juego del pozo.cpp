@@ -3,7 +3,7 @@
 #include<time.h>
 
 const int n=10;
-int i, j, m, vidas;
+int i, j, m, vidas=3;
 int mapa[n][n];
 int posicion[n][n];
 char direccion;
@@ -73,7 +73,7 @@ else if(direccion==pos4)
 //si caes en un pozo (un 0) te resta 1 vida
 if (posicion[i][j]==0)
 {
-	vidas=vidas-1
+	vidas=vidas-1;
 	//si te quedas sin vidas (vidas=0) perdes 
 	if (vidas==0)
 		{printf ("te quedaste sin vidas, el juego termino");}
